@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MarkBalisi.PlayingLocalVideoFile"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="500">
     <Grid>
-        
+        <TextBox x:Name="txtMediaPathTextbox" HorizontalAlignment="Left" Height="37" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357"/>
+        <Button x:Name="btnBrowseClick" Content="Browse" HorizontalAlignment="Left" Height="37" Margin="372,10,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click"/>
+        <MediaElement x:Name="VideoControl" HorizontalAlignment="Left" Height="358" Margin="10,52,0,0" VerticalAlignment="Top" Width="472" LoadedBehavior="Manual" UnloadedBehavior="Stop" Source="C:\TestV.MP4"/>
+        <Button x:Name="btnPlayClicl" Content="Play" HorizontalAlignment="Left" Height="30" Margin="10,429,0,0" VerticalAlignment="Top" Width="99" Click="btnPlayClicl_Click"/>
+        <Button x:Name="btnPauseClick" Content="Pause" HorizontalAlignment="Left" Height="30" Margin="131,429,0,0" VerticalAlignment="Top" Width="99" Click="btnPause_Click"/>
+        <Button x:Name="btnStopClick" Content="Stop" HorizontalAlignment="Left" Height="30" Margin="255,429,0,0" VerticalAlignment="Top" Width="99" Click="btnStopClick_Click"/>
+
     </Grid>
+
 </Window>
